@@ -5,21 +5,21 @@
 class Intentra < Formula
   desc "Observability for AI Coding Assistants"
   homepage "https://intentra.sh"
-  version "0.3.0"
+  version "0.3.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.0/intentra_0.3.0_darwin_amd64.tar.gz"
-      sha256 "f836e782ed478f033fd160d61d557f7c9bcf5922c3f097841d58bb2dde66b0a8"
+      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.5/intentra_0.3.5_darwin_amd64.tar.gz"
+      sha256 "651fca954f7630b6abaf56f6e31ab36d249cffacc94fe8e758bb09bf2c123b4d"
 
       def install
         bin.install "intentra"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.0/intentra_0.3.0_darwin_arm64.tar.gz"
-      sha256 "bd8537999b5743e55102990a4aba301d9a266dcd1f34d518545dc88d660d1d87"
+      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.5/intentra_0.3.5_darwin_arm64.tar.gz"
+      sha256 "0a1ae3837e526c71298efc399115ef41dca37222057f4f378b3c71fd640e3945"
 
       def install
         bin.install "intentra"
@@ -29,15 +29,15 @@ class Intentra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.0/intentra_0.3.0_linux_amd64.tar.gz"
-      sha256 "5ec83a316645e7e01680eb7783afc4217f050d5b7b9b289f99eb85cdce22b52b"
+      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.5/intentra_0.3.5_linux_amd64.tar.gz"
+      sha256 "be9b703afacf1dd3bc2a6c7325d657b2317ff15c861272cae68939393cba09c1"
       def install
         bin.install "intentra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.0/intentra_0.3.0_linux_arm64.tar.gz"
-      sha256 "41ab22abacc0e9dc3b1b71df23e464e6089bea019b38c2d0856c3793307e44ff"
+      url "https://github.com/atbabers/intentra-cli/releases/download/v0.3.5/intentra_0.3.5_linux_arm64.tar.gz"
+      sha256 "70bbed1c1573e8ecf4735f7ef631807a0d0e6aa24fea507d189af4ccfe69f099"
       def install
         bin.install "intentra"
       end

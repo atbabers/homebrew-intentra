@@ -11,7 +11,7 @@ class Intentra < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/atbabers/intentra-cli/releases/download/v0.6.0/intentra_0.6.0_darwin_amd64.tar.gz"
-      sha256 "7fa2e8a86128d77ab9437b4f0ab88303e55e6c44ab436f0aae232a046b9233c1"
+      sha256 "f303699cbb90717a1ea38b4a992ac2130762e2bac0aa642695b3ef2152b71e51"
 
       def install
         bin.install "intentra"
@@ -19,7 +19,7 @@ class Intentra < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/atbabers/intentra-cli/releases/download/v0.6.0/intentra_0.6.0_darwin_arm64.tar.gz"
-      sha256 "101a6942dc63a8a18bb572ebfd31fe1b9636a658156437e52ba2572695364c94"
+      sha256 "9b09483a47094fa6174c68311df4816c8cbb4452a29eb5ce783a9d47e7cbfc11"
 
       def install
         bin.install "intentra"
@@ -30,14 +30,14 @@ class Intentra < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/atbabers/intentra-cli/releases/download/v0.6.0/intentra_0.6.0_linux_amd64.tar.gz"
-      sha256 "d09095e230df311c046ab2c297ee1271cc4cc98ccaa99bbd3ed9b0c1532bf3b0"
+      sha256 "69fa654f13247cf06d249f25c5d818fae25878372ccb41c19a3faea8d313a615"
       def install
         bin.install "intentra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/atbabers/intentra-cli/releases/download/v0.6.0/intentra_0.6.0_linux_arm64.tar.gz"
-      sha256 "7cbb6e58536c08a4e6ef7591b72c4ca9361e65f80f4145dcd76a17a03fc58b98"
+      sha256 "2e2086f733cdad36b419d57d1d9f38f2c35c5480bb0d606f22b134c2368be7bc"
       def install
         bin.install "intentra"
       end
